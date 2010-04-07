@@ -8,6 +8,7 @@
 #ifndef ATOM_H_
 #define ATOM_H_
 #include <string>
+using namespace std;
 
 class Atom {
 	string symbol;
@@ -17,6 +18,7 @@ class Atom {
 	int hydrogenCount,stereoParity;
 public:
 	Atom(string atomSymbol);
+	Atom(string atomSymbol, double xCoordinate,double yCoordinate, double zCoordinate);
 	Atom();
 	virtual ~Atom();
 	int getAtomicNumber();
