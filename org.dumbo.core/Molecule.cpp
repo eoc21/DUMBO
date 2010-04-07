@@ -48,4 +48,16 @@ Bond* Molecule::getBond(int i){
 	return bonds.at(i);
 }
 
+/**
+ * Manually set atoms.
+ */
+void Molecule::setAtoms(Vector<Atom*>atomsToSet){
+	atoms = atomsToSet;
+}
 
+/**
+ * Manually set bonds.
+ */
+void Molecule::setBonds(Vector<Bond*>bondsToSet){
+	bonds = bondsToSet;
+}

@@ -18,8 +18,8 @@ public:
 	Bond* getBond(int i);
 	vector<Atom*> getAtoms();
 	vector<Bond*> getBonds();
-	void setBonds();
-	void setAtoms();
+	void setBonds(vector<Bond*> bondValues);
+	void setAtoms(vector<Atom*> atomValues);
 
 private:
 	vector<Atom*> atoms;
