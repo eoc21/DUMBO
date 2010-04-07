@@ -89,3 +89,10 @@ void Molecule::addLonePair(LonePair* aLonePair){
 void Molecule::addSingleElectron(SingleElectron* aSingleElectron){
 	singleElectrons.push_back(aSingleElectron);
 }
+
+/**
+ * Get the number of atoms.
+ */
+int Molecule::getAtomCount(){
+	return atoms.size();
+}

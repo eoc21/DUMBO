@@ -35,6 +35,7 @@ public:
 	void addBond(Bond* aBond);
 	void addLonePair(LonePair* aLonePair);
 	void addSingleElectron(SingleElectron* aSingleElectron);
+	int getAtomCount();
 
 };
 
