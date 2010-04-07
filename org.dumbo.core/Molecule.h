@@ -36,7 +36,13 @@ public:
 	void addLonePair(LonePair* aLonePair);
 	void addSingleElectron(SingleElectron* aSingleElectron);
 	int getAtomCount();
-
+	int getBondCount();
+	void removeAtom(int i);
+	void removeBond(int i);
+	void removeLonePair(int i);
+	void removeElectron(int i);
+	void removeAllAtoms();
+	void removeAllBonds();
 };
 
 #endif /* MOLECULE_H_ */

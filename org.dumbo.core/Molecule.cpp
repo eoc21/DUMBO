@@ -96,3 +96,52 @@ void Molecule::addSingleElectron(SingleElectron* aSingleElectron){
 int Molecule::getAtomCount(){
 	return atoms.size();
 }
+
+/**
+ * Get the number of bonds.
+ */
+int Molecule::getBondCount(){
+	return bonds.size();
+}
+
+/**
+ * Remove atom at a specific index
+ */
+void Molecule::removeAtom(int i){
+	atoms.erase(atoms.begin()+i);
+}
+
+/**
+ * Remove bond at specific index
+ */
+void Molecule::removeBond(int i){
+	bonds.erase(bonds.begin()+i);
+}
+
+/**
+ * Remove lone pair
+ */
+void Molecule::removeLonePair(int i){
+	lonePairs.erase(lonePairs.begin()+i);
+}
+
+/**
+ * Remove single electron
+ */
+void Molecule::removeElectron(int i){
+	singleElectrons.erase(singleElectrons.begin()+i);
+}
+
+/**
+ * Remove all atoms in the molecule
+ */
+void Molecule::removeAllAtoms(){
+	atoms.clear();
+}
+
+/**
+ * Remove all bonds in the molecule
+ */
+void Molecule::removeAllBonds(){
+	bonds.clear();
+}
