@@ -8,8 +8,15 @@
 #ifndef MOLECULE_H_
 #define MOLECULE_H_
 #include <vector>
+#include "Atom.h"
+#include "Bond.h"
+
+using namespace std;
 
 class Molecule {
+	vector<Atom*> atoms;
+	vector<Bond*> bonds;
+
 public:
 	Molecule();
 	Molecule(vector<Atom*> theAtoms,vector<Bond*> theBonds);
@@ -20,10 +27,6 @@ public:
 	vector<Bond*> getBonds();
 	void setBonds(vector<Bond*> bondValues);
 	void setAtoms(vector<Atom*> atomValues);
-
-private:
-	vector<Atom*> atoms;
-	vector<Bonds*> bonds;
 
 };
 

@@ -17,8 +17,8 @@ Molecule::Molecule() {
  * Constructs a molecule container with atoms and bonds supplied.
  */
 Molecule::Molecule(vector<Atom*>atomToAdd,vector<Bond*>bondsToAdd){
-	atomToAdd = atoms;
-	bondsToAdd = bonds;
+	atomToAdd = Molecule::atoms;
+	bondsToAdd = Molecule::bonds;
 }
 
 /**
@@ -51,13 +51,13 @@ Bond* Molecule::getBond(int i){
 /**
  * Manually set atoms.
  */
-void Molecule::setAtoms(Vector<Atom*>atomsToSet){
+void Molecule::setAtoms(vector<Atom*> atomsToSet){
 	atoms = atomsToSet;
 }
 
 /**
  * Manually set bonds.
  */
-void Molecule::setBonds(Vector<Bond*>bondsToSet){
+void Molecule::setBonds(vector<Bond*> bondsToSet){
 	bonds = bondsToSet;
 }
