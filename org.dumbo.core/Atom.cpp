@@ -15,3 +15,4 @@ Atom::Atom() {
 Atom::~Atom() {
 	// TODO Auto-generated destructor stub
 }
+
