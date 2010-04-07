@@ -6,12 +6,46 @@
  */
 
 #include "Molecule.h"
-
+using namespace std;
+/**
+ * Constructs an empty molecule container.
+ */
 Molecule::Molecule() {
-	// TODO Auto-generated constructor stub
-
 }
 
+/**
+ * Constructs a molecule container with atoms and bonds supplied.
+ */
+Molecule::Molecule(vector<Atom*>atomToAdd,vector<Bond*>bondsToAdd){
+	atomToAdd = atoms;
+	bondsToAdd = bonds;
+}
+
+/**
+ * Destroys molecule object.
+ */
 Molecule::~Molecule() {
-	// TODO Auto-generated destructor stub
 }
+
+/**
+ * Returns a pointer to the atom at the desired index.
+ */
+Atom* Molecule::getAtom(int i){
+	return atoms.at(i);
+}
+
+/**
+ * Returns a vector of pointers to the atoms in the molecule.
+ */
+vector<Atom*> Molecule::getAtoms(){
+	return atoms;
+}
+
+/**
+ * Returns a pointer to the bond at the desired index.
+ */
+Bond* Molecule::getBond(int i){
+	return bonds.at(i);
+}
+
+
