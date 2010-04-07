@@ -61,3 +61,31 @@ void Molecule::setAtoms(vector<Atom*> atomsToSet){
 void Molecule::setBonds(vector<Bond*> bondsToSet){
 	bonds = bondsToSet;
 }
+
+/**
+ * Add an additional atom.
+ */
+void Molecule::addAtom(Atom* anAtom){
+	atoms.push_back(anAtom);
+}
+
+/**
+ * Add an additional bond.
+ */
+void Molecule::addBond(Bond* aBond){
+	bonds.push_back(aBond);
+}
+
+/**
+ * Add an lone pair.
+ */
+void Molecule::addLonePair(LonePair* aLonePair){
+	lonePairs.push_back(aLonePair);
+}
+
+/**
+ * Add single electron.
+ */
+void Molecule::addSingleElectron(SingleElectron* aSingleElectron){
+	singleElectrons.push_back(aSingleElectron);
+}

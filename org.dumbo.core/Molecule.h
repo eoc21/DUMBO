@@ -10,12 +10,16 @@
 #include <vector>
 #include "Atom.h"
 #include "Bond.h"
+#include "LonePair.h"
+#include "SingleElectron.h"
 
 using namespace std;
 
 class Molecule {
 	vector<Atom*> atoms;
 	vector<Bond*> bonds;
+	vector<LonePair*> lonePairs;
+	vector<SingleElectron*> singleElectrons;
 
 public:
 	Molecule();
@@ -27,6 +31,10 @@ public:
 	vector<Bond*> getBonds();
 	void setBonds(vector<Bond*> bondValues);
 	void setAtoms(vector<Atom*> atomValues);
+	void addAtom(Atom* anAtom);
+	void addBond(Bond* aBond);
+	void addLonePair(LonePair* aLonePair);
+	void addSingleElectron(SingleElectron* aSingleElectron);
 
 };
 
