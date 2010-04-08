@@ -11,7 +11,7 @@
 using namespace std;
 
 class AtomType {
-	string id, elementSymbol;
+	string id,elementSymbol;
 	int neighbourCount,hybridization,valency;
 	double bondOrderSum,covalentRadius,maxBondOrder,vanDerWaalsRadius;
 public:
