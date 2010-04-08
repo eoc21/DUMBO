@@ -145,3 +145,5 @@ void Molecule::removeAllAtoms(){
 void Molecule::removeAllBonds(){
 	bonds.clear();
 }
+
+
