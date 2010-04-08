@@ -11,6 +11,9 @@
 using namespace std;
 
 class AtomType {
+	string id, elementSymbol;
+	int neighbourCount,hybridization,valency;
+	double bondOrderSum,covalentRadius,maxBondOrder,vanDerWaalsRadius;
 public:
 	AtomType(string elementSymbol);
 	AtomType(string id, string elementSymbol);
@@ -23,14 +26,14 @@ public:
 	int getHybridization();
 	double getMaxBondOrder();
 	int getValency();
-	double getVanderWaalsRadius();
+	double getVanDerWaalsRadius();
 	void setId(string id);
 	void setBondOrderSum(double bondSum);
 	void setCovalentRadius(double covalentRadiusValue);
 	void setHybridization(int hybridizationValue);
 	void setMaxBondOrder(double maximumBondOrder);
 	void setValency(int valency);
-	void setVanderWaalsRadius(int vwRadius);
+	void setVanDerWaalsRadius(double vwRadius);
 
 };
 
