@@ -6,6 +6,8 @@
  */
 
 #include "AtomType.h"
+#include <string>
+using namespace std;
 
 AtomType::AtomType() {
 	// TODO Auto-generated constructor stub
@@ -17,7 +19,7 @@ AtomType::~AtomType() {
 }
 
 AtomType::AtomType(string idValue, string elementType){
-	id = idvalue;
+	id = idValue;
 	elementSymbol = elementType;
 }
 
@@ -28,7 +30,7 @@ AtomType::AtomType(string elementType){
 /**
  * Return atom id.
  */
-string AtomType::getAtomId(){
+string AtomType::getAtomTypeId(){
 	return id;
 }
 
