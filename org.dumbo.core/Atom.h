@@ -7,10 +7,11 @@
 
 #ifndef ATOM_H_
 #define ATOM_H_
+#include "AtomType.h"
 #include <string>
 using namespace std;
 
-class Atom {
+class Atom : AtomType {
 	string symbol;
 	int atomicNumber;
 	double x,y,z;
